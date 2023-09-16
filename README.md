@@ -1,41 +1,39 @@
+<h1>Student Management System</h1>
 
-Student management system
-Welcome to the Student Management System project, a comprehensive tool designed to streamline  student information management in educational institutions. This system is designed to simplify  tracking of students, their  departments, contracts, and group assignments. With a rich feature set  and  well-structured data model, it ensures efficient management and organization of student data.
+<p id="description">Welcome to the Student Management System project, a comprehensive tool designed to streamline the management of student information in educational institutions. This system is built to simplify the tracking of students, their academic departments, contracts, and team assignments. With a rich set of features and a well-structured data model, it ensures efficient administration and organization of student data.</p>
+<h1>Key Classes and Relationships</h1>
 
- Key classes and relationships
-Student class:
+<h2>Student Class :</h2>
 
- The Student class represents each student studying at your  institution. Each student is associated with the following:
+<p id="description">The Student class represents individual students enrolled in your educational institution. Each student is associated with the following:
 
+ -Department: Students are linked to a specific academic department where they pursue their studies.
 
--Room:
-Students are linked to a specific science where they continue their studies. - Assignment by group (Team):
-Students can be members of a group (group) within the organization, facilitating collaborative and group activities.
+ -Team Assignment (Equipe): Students can be part of a team (equipe) within the institution, facilitating collaboration and group activities.
 
- -Contract:
-This class tracks each student's contract status, such as a contract or enrollment agreement.
+ -Contract: This class tracks the contract status of each student, such as enrollment contracts or agreements.
 
- -Select:
-A listing representing the study options or majors chosen by the student.
+ -Option: An enumeration (enum) representing the chosen academic option or major of the student.
+</p>
 
- Contract class:
+<h2>Contract Class :</h2>
 
- The Contract layer manages the contractual relationship between the educational institution and its students. Each contract includes information such as:
+<p id="description">The Contract class manages the contractual relationship between the educational institution and its students. Each contract includes information such as:
 
+-Specialization: An enumeration (enum) specifying the specialization or program of study chosen by the student.</p>
 
--Specialize:
-A list (list) indicating the major or program of study chosen by the student. Team class:
+<h2>Equipe (Team) Class :</h2>
 
- The Team class represents teams or groups of students collaborating on projects or activities within the organization. He understands:
+<p id="description">The Equipe class represents teams or groups of students who collaborate on projects or activities within the institution. It includes:
 
+ -Detail Equipe: A relationship to track detailed information about the team, its members, and activities.
 
--Equipment details:
-A relationship to track details about the group, its members, and its activities.
+ -Niveau (Level): An enumeration (enum) that categorizes teams by their academic level or grade.</p>
+ 
+ <h2>Departement (Department)  Class :</h2>
 
- -Level (Level):
-A roster ranks the teams according to their academic level or grade level.
+ <p id="description">The Departement class represents academic departments within the educational institution. It maintains a unidirectional relationship with the Universite class, establishing the institution's organizational structure.
 
- Faculty (Department) Class:
+ -Universite (University): Represents the university or educational institution that houses multiple academic departments.</p>
 
- The Faculty class represents academic departments within the  institution. It maintains a one-way relationship with the university class, establishing the  organizational structure of the educational institution. -University (University):
-Represents a university or educational institution with multiple academic departments.
+<p align="center"><img src="https://i.postimg.cc/V6Ps842y/image-2023-09-16-154047632.png" alt="project-image"></p>
